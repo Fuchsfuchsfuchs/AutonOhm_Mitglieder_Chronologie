@@ -1,0 +1,44 @@
+ <style>
+    body {
+      font-family: sans-serif;
+      margin: 20px;
+      background: #f4f4f4;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1560px; /* 5 Bilder à 300px + 4x 20px Abstand */
+      margin: 0 auto;
+    }
+
+    .gallery-item {
+      width: 100%;
+      text-align: center;
+    }
+
+    .gallery-item a {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .gallery-item img {
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 15px;
+      transition: transform 0.3s ease;
+    }
+
+    .gallery-item img:hover {
+      transform: scale(1.05);
+    }
+
+    .caption {
+      margin-top: 8px;
+      font-size: 0.95em;
+      color: #333;
+    }
+  </style>
